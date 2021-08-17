@@ -1,0 +1,188 @@
+body {
+    font-family: 'jost', sans-serif !important;
+    background-color: #fff;
+  }
+  
+  .navBar {
+    position: sticky;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: top .5s ease-in-out;
+    margin-bottom: 3rem;
+  }
+  .navBar.scroll-up {
+    top: 0;
+  }
+  
+  .navBar.scroll-down {
+    top: -100%;
+  }
+  .navBar.scroll-up,
+  .navBar:focus-within {
+    top: 0;
+  }
+  
+  .navTitle {
+  margin: 1rem;
+  
+  }
+  .navTitle a {
+    color: #000;
+    font-size: 1.2rem;
+    text-decoration: none !important;
+  }
+  
+  .navLinks {
+    height: 100%;
+  }
+  .navLinks ul {
+    list-style: none !important;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .navLinks ul li {  
+    padding: 1rem;
+  }
+  .navLinks ul li a {
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .navLinks ul li a span {
+    color: #000;
+    /*background: 
+    linear-gradient(to right, rgba(100, 200, 200, 0), rgba(100, 200, 200, 0)),
+    linear-gradient(to right, rgba(238,103,31,1), rgba(191,234,224,1));
+    background-size: 100% 0.1em, 0 0.6em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 500ms;*/
+  }
+  
+  /*.navLinks ul li a span:hover {
+    background-size: 0 0.1em, 100% 0.6em;
+  }
+  */
+  
+  .toggleButton {
+    position: absolute;
+    top: 2.5rem;
+    right: 1rem;
+    color: #000;
+    display: none;
+  }
+
+
+  @keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+  .text {
+    padding: 5%;
+    padding-right: 8rem !important; 
+    padding-left: 8rem !important;
+    animation: 1s ease-in fadeIn;
+  }
+
+  .illustration img {
+    animation: 2s ease-in-out fadeIn;
+    width: 100%;
+  }
+  .action-buttons {
+    margin-top: 4rem;
+  }
+
+  .btn-ac {
+    margin: 0 5px;
+    border: none;
+    width: 280px;
+    height: 70px;
+    border-radius: 10px;
+    font-weight: 500;
+    color:#fff;
+  }
+
+
+  @media (max-width: 1400px) { /*Tablets*/
+    .text {
+      padding-right: 2rem !important; 
+      padding-left: 2rem !important;
+    }
+    .btn-ac {
+      width: 180px;
+    }
+  }
+
+
+  @media (max-width: 700px) { /*smartphones*/
+    .navBar {
+      flex-direction: column;
+      align-items: flex-start;
+      height: 120.5px;
+      transition: .5s;
+      padding:0 ;
+      margin:0 ;
+    }
+  
+    .navBar.active {
+      height: 300px;
+    }
+  
+    .toggleButton {
+      display: flex;
+      text-decoration: none;
+    }
+  
+    .navLinks {
+      display: none;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    .navLinks ul {
+      flex-direction: column;
+      width: 100%;
+    }
+    .navLinks ul li {
+      text-align: left;
+      width: 100%;
+    }
+    .navLinks ul li a {
+      text-decoration: none;
+      padding: .5rem 1rem;
+      width: 100%;
+    }
+    .navLinks.active {
+      display: flex;
+    }
+
+    .text {
+      padding-right: 2rem !important; 
+      padding-left: 2rem !important;
+      animation: 1s ease-in fadeIn;
+    }
+    .btn-ac {
+      margin: 10px 0;
+    }
+  }
