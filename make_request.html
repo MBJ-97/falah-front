@@ -34,7 +34,98 @@
         </div>       
     </nav>
 
-    <div class="container"></div>
+    <div class="container">
+        <div class="intro-form">
+            <h1>Faire une demande de prêt</h1>
+            <p>Pour pouvoir faire durer le matériel afin que vous et d’autres personnes dans le besoin puissiez en profiter au maximum, 
+                vous acceptez en faisant cette demande : 
+                <ul>
+                    <li>Prendre soin du concentrateur prêté.</li>
+                    <li>Fournir une photocopie de la pièce d’identité.</li>
+                    <li>Ne pas prêter le concentrateur.</li>
+                </ul>
+            </p>
+        </div>
+
+        <form action="">
+            <div class="row">
+                <h3 class="infos">
+                    Informations et contact
+                </h3>
+                <div class="col-12 col-md-6 mb-4">
+                    <label class="form-label">Prénom</label>
+                    <input name ='name' class="form-control">
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <label class="form-label">Nom</label>
+                    <input name ='last_name' class="form-control">
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <label class="form-label">Email</label>
+                    <input type="email" name="email" class="form-control">
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <label class="form-label">Numéro de téléphone</label>
+                    <input type="tel" name="phone_number" class="form-control"> 
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <label class="form-label">Wilaya</label>
+                    <select class="form-select" name="wilaya">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <label class="form-label">Commune</label>
+                    <select class="form-select" name="commune">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <label class="form-label">Adresse</label>
+                    <input name ='adresse' class="form-control">
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <label class="form-label">Numéro de téléphone</label>
+                    <input type="tel" name="phone_number" class="form-control"> 
+                </div>
+
+                <h3 class="infos">
+                    Informations concernant le malade
+                </h3>
+                <div class="col-12 col-md-6 mb-4">
+                    <label class="form-label">Date du test COVID positif</label>
+                    <input name ='adresse' type="date" class="form-control">
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <label class="form-label">Taux d'oxygène</label>
+                    <input name ='rate_o2' type="number" class="form-control">
+                </div>
+
+                <h3 class="infos">
+                    Information du garde malade
+                </h3>
+                <div class="col-12 col-md-6 mb-4">
+                    <label class="form-label">Nom du garde malade</label>
+                    <input name ='garde_malade_name' class="form-control">
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <label class="form-label">Téléphone du garde malade</label>
+                    <input name ='garde_malade_phone_number' type="tel" class="form-control">
+                </div>
+            </div>
+
+              <div class="text-center">
+                    <button type="submit" class="btn-ac btn-form" style="background-color: #399CC0;">Envoyer ma demande</button>
+              </div>
+              
+        </form>
+    </div>
 
     <script src="./js/custom.js" ></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
