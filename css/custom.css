@@ -128,6 +128,9 @@ body {
   }
 
   /*Request page*/
+  .form-control, .form-select{
+    border: 2px solid #000 !important;
+  }
   .intro-form {
     padding: 0 20% ;
     margin-bottom: 4rem;
@@ -141,6 +144,32 @@ body {
     margin-top: 4rem !important ;
     margin-bottom: 3rem ;
   }
+
+  /*Demande succes page*/
+  .ill-succes {
+    width: 25% !important;
+  }
+
+  .succes-text {
+    max-width: 50%;
+    
+  }
+  .succes-text p {
+    float: center;
+    font-weight: 400;
+  }
+
+  /*Verification page*/
+  .verif-form {
+    padding: 5% 10% !important;
+  }
+
+  .verif-ill {
+    width: 80% !important;
+    animation: 2s ease-in-out fadeIn;
+  }
+  
+
 
 /*Tablets*/
 
@@ -214,4 +243,21 @@ body {
     .btn-ac {
       margin: 10px 0;
     }
+
+    /*demande succes styles*/
+
+    .ill-succes {
+      width: 80% !important;
+    }
+    .succes-text {
+      max-width: 80%;
+      
+    }
+
+    /*Verif page*/
+    .verif-ill {
+      margin-bottom: 4rem;
+      width: 70% !important;
+    }
+
   }
